@@ -1,0 +1,255 @@
+/* import other css files */
+@import url(./fontface.css);
+@import url(./partials/variables.css);
+@import url(./partials/global.css);
+
+/* start navigation */
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 20rem ;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--notoserif);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradiant-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradiant-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* end navigation */
+/* banner area */
+.site-main .site-banner {
+    background: linear-gradient(90deg,#854fee 0%,#4458dc 50%);
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 20%;
+    font-weight: 800;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-5px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 3.6rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.8rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 5rem 2rem;
+    width: 50rem;
+}
+/* end banner area */
+/* start about area */
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+.site-main .about-area .about-title h2>span{
+    display: block;
+    font: normal bold 49px/60px var(--notoserif);
+    letter-spacing: 20px;
+}
+.site-main .about-area .about-image{
+    padding-right: 5rem;
+}
+
+.site-main .about-area .about-title .paragraph>p{
+    padding: .4rem 0;
+}
+/* end about area */
+/* start brand area */
+
+.site-main .brand-area{
+    padding: 1rem 10rem;
+    margin-bottom: 4rem;
+}
+.site-main .brand-area .first-row .col-lg-4{
+    display: flex;
+    justify-content: center;
+} 
+.site-main .brand-area .first-row .col-lg-4> .single-brand{
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 180px;
+    height: 90px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+.site-main .brand-area .first-row .col-lg-4 >.single-brand > img{
+    width: 50%;
+}
+.site-main .brand-area .first-row .col-lg-4 .single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+.site-main .brand-area .first-row .col-lg-4 >.single-brand:hover > img{
+    filter: brightness(.15);
+}
+.site-main .brand-area .contact-us{
+    padding-left: 1rem;
+}
+.site-main .brand-area .contact-us span{
+    display: block;
+}
+.site-main .brand-area .contact-us .years-area{
+    padding:2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+}
+.site-main .brand-area .contact-us .bg-panel{
+    position: absolute;
+    left: -190px; top:0%;
+    background: #f01c1c0a;
+    width: 400px;
+    height: 400px;
+    margin-left:340px;
+    z-index: -1;
+}
+.site-main .brand-area .contact-us .years-area .years{
+    font: normal bold 84px/40px var(--notoserif);
+    color: var(--primary-color2);
+    z-index: -2;
+}
+.site-main .brand-area .contact-us .years-area h2>span{
+    font: normal 600 22px/30px var(--notoserif);
+}
+.site-main .brand-area .contact-us .call-area{
+    padding-left: 10rem;
+}
+/* end brand area */
+/* services area */
+
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+.site-main .services-area .service-title{
+    padding: 0 7rem;
+}
+.site-main .services-area .service-title h1{
+    font-size: 35px;
+}
+.site-main > .services-area .services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition:box-shadow .7s ease;
+}
+.site-main > .services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/* end services area */
+
+/* Project Area */
+.site-main .project{
+    padding: 4rem 0;
+}
+.site-main .project .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/60px var(--notoserif);
+    text-transform: uppercase;
+}
+.site-main .project .button-group button+button{
+    padding-left: 3rem;
+}
+.site-main .project .button-group button:hover{
+    background: var(--gradiant-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.site-main .project .grid .our-project>.title h4{
+    font: normal 700 25px/12px var(--notoserif);
+
+}
+.site-main .project .grid .our-project a:hover img{
+    filter: brightness(1.1)drop-shadow(1px 8px 30px #b1afaf);
+
+}
+
+/* end Project Area */
+/* about area */
+.site-main .about .about-title p{
+    padding: 1rem 7rem;
+}
+.site-main .about .client{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+.site-main .about .client .client-img{
+    padding: 2rem;
+}
+.site-main .about .client .about-client{
+    padding-top: 2rem;
+}
+.site-main .about .client .about-client h4{
+    font: normal 500 21px/20px var(--notoserif);
+}
+.site-main .about .client .about-client p{
+    font-size: 14px;
+}
+.site-main .about .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+.site-main .about .owl-carousel .owl-dots .owl-dot.active span{
+    background:var(--primary-color2);
+    width: 22px;
+    height: 12px;
+}
+/* end about area */
+
+/* footer area */
+footer.footer-area{
+    padding: 5rem 0;
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/ 30px var(--notoserif);
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
+}
+/* end footer */
